@@ -91,6 +91,16 @@ Responsibilities:
 
 Full product backlog and ticket history available in the Jira project.
 
+
+## Automation Rules
+
+Three automation flows built in Jira to reduce manual work and enforce team process:
+
+| Rule | Trigger | Condition | Action |
+|------|---------|-----------|--------|
+| Auto-assign new issues to SM | Work item created | issuetype in (Story, Bug) | Assign to Scrum Master |
+| In Progress notification comment | Work item transitioned to In Progress | None | Add comment reminding assignee to update daily |
+| Auto-set High priority on Bug creation | Work item created | issuetype = Bug | Set priority to High |
 ---
 
 ## Key Takeaways
