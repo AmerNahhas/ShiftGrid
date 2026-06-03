@@ -77,3 +77,70 @@ Responsibilities:
 | SSB-5 | Employee can submit time-off requests through the app | 3 | ✅ Done |
 | SSB-6 | Admin can generate a payroll hours report | 5 | ✅ Done |
 | SSB-7 | Bug: Mobile UI misalignment on shift
+
+### Sprint 3 — June 19 to July 3, 2026
+**Goal:** Fix critical iOS bugs and build the scheduling intelligence layer — conflict detection, availability calendar, and manager alerts
+
+| Ticket | Story | Points | Status |
+|--------|-------|--------|--------|
+| SSB-11 | Bug: Login page crashes on Safari iOS | 3 | ✅ Done |
+| SSB-7 | Bug: Mobile UI misalignment on shift swap screen | 3 | ✅ Done |
+| SSB-12 | Manager can view team availability calendar | 5 | ✅ Done |
+| SSB-13 | System flags shift conflicts before publishing | 5 | ✅ Done |
+| SSB-14 | Employee can set preferred working hours | 3 | ✅ Done |
+| SSB-15 | Admin can export shift schedule as PDF | 3 | ✅ Done |
+| SSB-16 | Manager receives alert when shift is understaffed | 5 | ✅ Done |
+| SSB-17 | Employee can view shift history for last 30 days | 3 | ✅ Done |
+
+**Velocity:** 27 points delivered — 100% completion
+
+---
+
+## Sprint 1 Retrospective
+
+**What went well:**
+- All 3 Sprint 1 stories delivered on time with no scope changes
+- QA caught a mobile UI bug early (SSB-7) before it reached production
+- Clear acceptance criteria prevented back-and-forth during review
+
+**What to improve:**
+- Notification service dependency was identified late in Sprint 1 — should be flagged during backlog grooming
+- Mobile testing should be added to the Definition of Done from Sprint 1
+
+**Action items for Sprint 2:**
+- Add mobile testing checklist to QA process
+- Flag external dependencies during sprint planning, not mid-sprint
+
+---
+
+## Automation Rules
+
+Three automation flows built in Jira to reduce manual work and enforce team process:
+
+| Rule | Trigger | Condition | Action |
+|------|---------|-----------|--------|
+| Auto-assign new issues to SM | Work item created | issuetype in (Story, Bug) | Assign to Scrum Master |
+| In Progress notification comment | Work item transitioned to In Progress | None | Add comment reminding assignee to update daily |
+| Auto-set High priority on Bug creation | Work item created | issuetype = Bug | Set priority to High |
+
+---
+
+## Key Takeaways
+
+- Managed a 3-sprint Scrum cycle delivering 51 story points across 17 work items
+- Facilitated cross-functional coordination across dev, QA, and product roles
+- Applied real-world Scrum ceremonies: sprint planning, standups, retrospectives
+- Tracked and resolved production bugs through proper Agile workflow
+- Built and tested 3 Jira automation rules reducing manual triage work
+- Managed Epic → Story → Bug hierarchy across 3 product areas
+- Executed critical path dependency management across Sprint 3
+
+---
+
+## Project Documentation
+
+| Document | Description |
+|----------|-------------|
+| [README.md](README.md) | Project overview and sprint summaries |
+| [DEFINITION_OF_DONE.md](DEFINITION_OF_DONE.md) | Team quality standards and completion criteria |
+| [SPRINT_3_REVIEW.md](SPRINT_3_REVIEW.md) | Sprint 3 stakeholder review and retrospective |
